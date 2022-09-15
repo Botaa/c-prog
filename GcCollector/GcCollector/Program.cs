@@ -14,30 +14,20 @@ namespace GcCollector
             public MyClass()
             {
                 Count++;
+                Console.WriteLine(Count);
             }
              ~MyClass()
             {
                 Count--;
             }
-
-            public int Ki()
-            {
-                return Count;
-            }
         }
 
         static void Main(string[] args)
         {
-            int max = 0;
             while(true)
             {
                 MyClass myObj = new MyClass();
-                List<int> Lista = new List<int>();
-                Lista.Add(myObj.Ki());
-                if(max < Lista.Max())
-                    max=Lista.Max();
-
-                Console.WriteLine(max);
+                
             }
         }
     }
