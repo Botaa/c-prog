@@ -10,7 +10,7 @@ namespace GcCollector
     {
         public class MyClass
         {
-            public static int Count { get; set; }
+            public static int Count = 0;
             public MyClass()
             {
                 Count++;
